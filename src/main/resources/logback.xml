@@ -1,0 +1,14 @@
+<configuration>
+    <!-- to screen -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- screen output pattern -->
+            <pattern>%d{[yyyy-MM-dd HH:mm:ss.SSS]} [%X{TRACE_ID}] [%thread] [%F:%L] %-5level  - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
